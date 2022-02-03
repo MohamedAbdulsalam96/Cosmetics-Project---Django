@@ -1,0 +1,600 @@
+{% load static %}
+<!-- <h1> Cosmetics-Project---Django </h1> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cosmetic Boutique</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="{% static 'css/mmm.css' %}">
+<!-- <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+<!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}"/>
+<link rel="stylesheet" href="{% static 'css/lightgallery.min.css' %}"> --> -->
+<!-- <script type="text/javascript" src="{% static 'js/main.js' %}"> </script> -->
+</head>
+
+
+<body>
+  <header class="header">
+      <a href="#home" class="logo"><img src="{% static 'images/Logo.png' %}" alt=""></a>
+      <form action="" class="search-form">
+          <input type="search" placeholder="Search Here..." id="search">
+          <label for="search" class="fas fa-search"></label>
+      </form>
+      <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+      </div>
+  </header>
+  <!-- Start Navbar -->
+  
+  
+  <nav class="navbar">
+      <div id="close-navbar" class="fas fa-times"></div>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#team">Team</a>
+      <a href="#arrivals">Arrivals</a>
+      <a href="#blogs">Blogs</a>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Start Home Section -->
+  <section class="home" id="home">
+      <div class="slide active">
+          <div class="content">
+              <img src="{% static 'images/content-img-1.png' %}" alt="">
+              <span>New Arrivals 2022</span>
+              <h3>Cosmetics</h3>
+              <a href="#" class="btn">Read More</a>
+              <div class="controls">
+                  <div class="fas fa-angle-left" onclick="prev()"></div>
+                  <div class="fas fa-angle-right" onclick="next()"></div>
+              </div>
+          </div>
+          <div class="image">
+              <img src="{% static 'images/home-img-1.png' %}" alt="">
+          </div>
+      </div>
+  </section>
+  <!-- End Home Section -->
+  <!-- Start Category Section -->
+  <div class="heading">
+      <h1>category products</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate architecto eius sequi! Placeat, magnam?</p>
+  </div>
+  <section class="category" id="category">
+
+      <a href="#" class="box">
+          <img src="{% static 'images/category-1.png' %}" alt="">
+          <p>Cosmetics</p>
+      </a>
+      
+  </section>
+  <!-- End Category Section -->
+  <!-- Start About Section -->         
+  <!-- Start Service Section -->
+  <div class="heading">
+      <h1>category products</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate architecto eius sequi! Placeat, magnam?</p>
+  </div>
+  <section class="service" id="service">
+      <div class="box">
+          <img src="{% static 'images/service-1.png' %}" alt="0000000000000000000">
+          <h3>Free shipping</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, maxime.</p>
+      </div>
+      <div class="box">
+          <img src="{% static 'images/service-2.png' %}" alt="0000000000000000000">
+          <h3>secure payment</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, maxime.</p>
+      </div>
+      <div class="box">
+          <img src="{% static 'images/service-3.png' %}" alt="">
+          <h3>2/4 support</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, maxime.</p>
+      </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Start Shop Section -->
+  <section class="shop" id="shop">
+      <div class="heading">
+          <h1>featured products</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate architecto eius sequi! Placeat, magnam?</p>
+      </div>
+      <div class="products-slider swiper mySwiper">
+          <div class="wrapper swiper-wrapper">
+              <div class="slide swiper-slide">
+                  <div class="image">
+                      <span class="discount">-25%</span>
+                      <img src="{% static 'images/product-1.jpg' %}" alt="">
+                      <div class="icons">
+                          <a href="#" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-share"></a>
+                      </div>
+                  </div>
+                  <div class="content">
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                      </div>
+                      <p>beauty products</p>
+                      <div class="price">$49.99 <span>$79.99</span></div>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+  </section>
+  <!-- End Shop Section -->
+  <!-- Start Gallery Section -->
+  <!-- Start Team Section -->
+  <!-- Start Arrivals Section -->
+  <!-- Start Review Section -->
+  <!-- Start Blogs Section -->
+  <!-- Start Footer Section -->
+  <section class="footer">
+      <div class="box-container">
+          <div class="box">
+              <h3>Quick Links</h3>
+              <a class="link" href="#home"> <i class="fas fa-angle-right"></i> Home </a>
+              <a class="link" href="#shop"> <i class="fas fa-angle-right"></i> Shop </a>
+              <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> Gallery </a>
+              <a class="link" href="#team"> <i class="fas fa-angle-right"></i> Team </a>
+              <a class="link" href="#arrivals"> <i class="fas fa-angle-right"></i> Arrivals </a>
+              <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> Blogs </a>
+          </div>
+          <div class="box">
+              <h3>extra links</h3>
+              <a href="#" class="link"> <i class="fas fa-angle-right"></i> my order </a>
+              <a href="#" class="link"> <i class="fas fa-angle-right"></i> my favorite </a>
+              <a href="#" class="link"> <i class="fas fa-angle-right"></i> my wishlist </a>
+              <a href="#" class="link"> <i class="fas fa-angle-right"></i> private policy </a>
+              <a href="#" class="link"> <i class="fas fa-angle-right"></i> terms of use </a>
+          </div>
+          <div class="box">
+              <h3>contact info</h3>
+              <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+              <p> <i class="fas fa-phone"></i> +111-333-9999 </p>
+              <p> <i class="fas fa-envelope"></i> SomeOne@gmail.com </p>
+              <p> <i class="fas fa-map"></i> Mansoura, Egypt </p>
+              <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-github"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+              </div>
+          </div>
+          <div class="box">
+              <h3>newletter</h3>
+              <p>subscribe for latest updates</p>
+              <form action="">
+                  <input type="email" class="email" placeholder="Enter Your Email">
+                  <input type="submit" value="Sunscribe" class="btn">
+              </form>
+          </div>
+      </div>
+      <p class="created">created by <span>Mohamed Alqadasi</span> | all rights reserved!</p>
+  </section>
+  <!-- End Footer Section -->
+  <!-- <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js '%}"></script>
+  <script src=" {% static 'https://unpkg.com/swiper@7/swiper-bundle.min.js'%}"></script> -->
+  <script src="{% static 'js/lightgallery.min.js' %}"></script>
+  <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+
+  <script src="{% static 'js/main.js' %}"></script>
+  <script>
+    let navbar = document.querySelector('.navbar')
+document.querySelector('#menu-btn').onclick = () => {
+    navbar.classList.toggle('active')
+}
+
+document.querySelector('#close-navbar').onclick = () => {
+    navbar.classList.remove('active')
+}
+
+let searchForm = document.querySelector('.search-form')
+document.querySelector('#search-btn').onclick = () => {
+    searchForm.classList.toggle('active')
+}
+
+window.onscroll = () => {
+    navbar.classList.remove('active')
+    searchForm.classList.remove('active')
+}
+
+let slides = document.querySelectorAll('.home .slide');
+let index = 0;
+
+function next() {
+    slides[index].classList.remove('active')
+    index = (index + 1) % slides.length
+    slides[index].classList.add('active')
+}
+function prev() {
+    slides[index].classList.remove('active')
+    index = (index - 1 + slides.length) % slides.length
+    slides[index].classList.add('active')
+}
+var swiper = new Swiper(".products-slider", {
+    loop: true,
+    grapCursor: true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+  });
+var swiper = new Swiper(".arrivals-slider", {
+    loop: true,
+    grapCursor: true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+  });
+var swiper = new Swiper(".blogs-slider", {
+    loop: true,
+    grapCursor: true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+  });
+lightGallery(document.querySelector('.gallery .lightBox'))
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      991: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+
+
+
+
+
+
+
+  </script>
+  <!-- <script>
+    let navbar = document.querySelector('.navbar')
+    document.querySelector('#menu-btn').onclick = () => {
+      navbar.classList.toggle('active')
+}
+
+    document.querySelector('#close-navbar').onclick = () => {
+      navbar.classList.remove('active')
+}
+
+    let searchForm = document.querySelector('.search-form')
+    document.querySelector('#search-btn').onclick = () => {
+      searchForm.classList.toggle('active')
+}
+
+    window.onscroll = () => {
+      navbar.classList.remove('active')
+      searchForm.classList.remove('active')
+}
+
+    let slides = document.querySelectorAll('.home .slide');
+    let index = 0;
+
+    function next() {
+      slides[index].classList.remove('active')
+      index = (index + 1) % slides.length
+      slides[index].classList.add('active')    
+
+}
+    function prev() {
+      slides[index].classList.remove('active')
+      index = (index - 1 + slides.length) % slides.length
+      slides[index].classList.add('active')
+
+}
+    var swiper = new Swiper(".products-slider", {
+      loop: true,
+      grapCursor: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+  });
+
+    var swiper = new Swiper(".arrivals-slider", {
+      loop: true,
+      grapCursor: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+  });
+    var swiper = new Swiper(".blogs-slider", {
+      loop: true,
+      grapCursor: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+  });
+    lightGallery(document.querySelector('.gallery .lightBox'))
+
+    var swiper = new Swiper(".review-slider", {
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+      },
+        768: {
+          slidesPerView: 2,
+      },
+        991: {
+          slidesPerView: 3,
+      },
+    },
+  });
+
+
+
+
+
+
+
+
+  </script>   -->
+  <!-- <script>
+    let navbar = document.querySelector('.navbar')
+document.querySelector('#menu-btn').onclick = () => {
+    navbar.classList.toggle('active')
+}
+
+document.querySelector('#close-navbar').onclick = () => {
+    navbar.classList.remove('active')
+}
+
+let searchForm = document.querySelector('.search-form')
+document.querySelector('#search-btn').onclick = () => {
+    searchForm.classList.toggle('active')
+}
+
+window.onscroll = () => {
+    navbar.classList.remove('active')
+    searchForm.classList.remove('active')
+}
+
+let slides = document.querySelectorAll('.home .slide');
+let index = 0;
+
+function next() {
+    slides[index].classList.remove('active')
+    index = (index + 1) % slides.length
+    slides[index].classList.add('active')
+}
+function prev() {
+    slides[index].classList.remove('active')
+    index = (index - 1 + slides.length) % slides.length
+    slides[index].classList.add('active')
+}
+var swiper = new Swiper(".products-slider", {
+    loop: true,
+    grapCursor: true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+  });
+var swiper = new Swiper(".arrivals-slider", {
+    loop: true,
+    grapCursor: true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+  });
+var swiper = new Swiper(".blogs-slider", {
+    loop: true,
+    grapCursor: true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        550: {
+          slidesPerView: 2,
+        },
+        850: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      },
+  });
+lightGallery(document.querySelector('.gallery .lightBox'))
+
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      991: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
+
+  </script> -->
+</body>
+
+</html>
+
+<!-- {%for x in brand %}
+<a href="{{x.Name}}"> <h2>{{x.Name}}</h2></a>
+{% endfor%} -->
