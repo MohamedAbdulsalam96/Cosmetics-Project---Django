@@ -1,0 +1,91 @@
+{% extends 'parts/genbase.html' %}
+
+{% block content %}
+
+{% load static %}
+    <!-- Features Section Begin -->
+    <section class="features-section spad">    
+        <div class="features-ads">    
+            <div class="container">
+                <div class="section-title">
+                    <h2>our Brands..</h2>
+                </div>    
+                <div class="row">
+                    {% for x in brand  %}
+                    <div class="col-lg-4">                        
+                        <div class="single-features-ads first">
+                            <img src="{{x.images.url}}" alt="">
+                            <h4>{{x.Name}} </h4>
+                            <p>{{x.descreption}} </p>
+                        </div>                       
+                    </div>
+                    {% endfor %}
+                    <!-- <div class="col-lg-4">
+                        <div class="single-features-ads second">
+                            <img src="img/icons/coin.png" alt="">
+                            <h4>100% Money back </h4>
+                            <p>Urna quam, euismod sit amet mollis quis, vestibulum quis velit. Vesti bulum mal esuada
+                                aliquet libero viverra cursus. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="single-features-ads">
+                            <img src="img/icons/chat.png" alt="">
+                            <h4>Online support 24/7</h4>
+                            <p>Urna quam, euismod sit amet mollis quis, vestibulum quis velit. Vesti bulum mal esuada
+                                aliquet libero viverra cursus. </p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- Features Box -->
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Latest Product Begin -->
+    <section class="latest-products spad">
+        <div class="container">
+            <div class="product-filter">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title">
+                            <h2>Latest Products</h2>
+                        </div>
+
+                        
+                       
+                        <div class="row" id="Berand">
+                
+                        <ul class="product-controls">
+                            <!-- <li data-filter="*"><a href="{% url 'home'%}">All</a></li> -->
+                            <a href="{% url 'home'%}"> <li data-filter="*">All</li></a>
+                            {% for type in cate %}
+                            <li> <a href="{% url 'home'%}?q={{type.Name}}">{{type.Name}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="product-list">
+                {% for pro in proSet %}
+                <div class="col-lg-3 col-sm-6 mix all dresses bags">
+                    <div class="single-product-item">
+                        <figure>
+                            <a href="#"><img src="{{pro.images.url}}" alt=""></a>
+                            <div class="p-status">new</div>
+                        </figure>
+                        <div class="product-text">
+                            <h6>Green Dress with details</h6>
+                            <p>{{pro.Price}}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- Latest Product End -->
+
+
+{% endblock content %}
