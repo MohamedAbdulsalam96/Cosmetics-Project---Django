@@ -1,50 +1,57 @@
 # Cosmetics-Project---Django
-# Blog django in arabic
-
-Project from scratch for arab web developers who search for a full project using django consept.
+This project is a commercial website, dedicated to displaying cosmetic products, brands and product details..
+<ul>
+    <li>Built with sqllist database </li>
+    <li>Includes a login form.</li>
+    <li>- Includes an admin page, to add, modify, and control information on the site.</li>
+    <li>It is still under development and revision.</li>
+</ul>
 
 # Libraries and framework used:
 <ul>
-    <li>Django 2.2</li>
-    <li>Bootstrap 4.3.x</li>
-    <li>jQuery 3.3.1</li>
+    <li>Django </li>
+    <li>Bootstrap</li>
     <li>Font awesome</li>
     <li>Pillow</li>
-    <li>Crispy form</li>
 </ul>
 
 
 <h2>Steps to download project:</h2>
 <h3>1- Download the full project from this link:</h3>
-<code>https://github.com/aabouissa/blog-django-ar/archive/master.zip</code>
+<code>https://github.com/MohamedAbdulsalam96/Cosmetics-Project---Django/archive/refs/heads/main.zip</code>
 
 or
 
 you can clone the repository using this code:
-<code>git clone https://github.com/aabouissa/blog-django-ar.git</code>
+<code>git clonehttps://github.com/MohamedAbdulsalam96/Cosmetics-Project---Django.git</code>
 
 
 <h3>2- Create your virtual environment:</h3>
 - If you use Linux or Mac OSX, use this code:
-<code>python3 -m virtualenv .</code>
+<code>python3 -m virtualenv env </code>
 <br>
 - If you use Windows, use this code:
-<code>virtualenv .</code>
+<code>virtualenv env </code>
 
 <h3>3- Activate your virtual enviroment:</h3>
 - Users of Linux  and Mac OSX:
 <code>source bin/activate</code>
 <br>
 - Users of Windows:
-<code>Scripts bin\activate</code>
+<code>evn\Scripts\activate</code>
 
 
-<h3>4- Installation of packages via Requirements.txt file: </h3>
-<code>pip install -r Requirements.txt</code>
+<h3>4- Installation of packages: </h3>
+<code>Pip install Django</code>
 
 <h3>5- Change directory using this code: </h3>
-<code>cd src</code>
+<code>cd aproject</code>
 
 <h3>6- Run your developement server:</h3>
 <code>python manage.py runserver</code>
 
+# Built by: 
+    Mohamed Abdel Salam Ismail Abdullah
+
+# To communicate:
+    moha2016it@gmail.com
